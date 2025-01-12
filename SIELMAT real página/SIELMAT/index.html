@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/portada.css" />
+    <link rel="stylesheet" href="css/us.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/calendar.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <script defer src="js/app.js"></script>
+    
+    <title>SIELMAT</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#us" class="selected">Nosotros</a></li>
+          <li><a href="#service">Servicios</a></li>
+          <li><a href="#calendar">Calendario</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="portada">
+      <div class="portada-img-section">
+        <img class="portada-img" src="img/portada.png" alt="Portada" />
+      </div>
+      <div class="portada-contact-btn">
+        <button class="portada-btn">Contáctanos</button>
+      </div>
+    </section>
+    <section class="us" id="us">
+      <div class="us-info">
+        <h1 class="us-title">
+          CONOCIMIENTO <span class="us-res">en el</span> 
+          SECTOR ELÉCTRICO
+        </h1>
+        <p class="us-text">
+          Garantizamos soluciones y enfoque en las necesidades de cada cliente, 
+          brindando un servicio personalizado y eficaz.
+        </p>
+        <button class="btn enviar">¿Estás pensando en un proyecto?</button>
+      </div>
+      <div class="us-img-section">
+        <img class="us-img" src="img/us.png" alt="Nosotros" />
+        <div class="us-img-line"></div>
+      </div>
+    </section>
+    <section class="services" id="service">
+      <h2 class="services-title">Nuestros Servicios</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <div class="service-icono-section">
+            <img class="service-icono" src="img/pm.png" alt="Mantenimiento" />
+            <div class="serivice-img-line"></div>
+          </div>
+          <div class="service-info">
+            <h3 class="service-sub-title">Proceso de Mantenimiento</h3>
+            <p class="service-text">
+              Actividades que operan de manera eficiente y segura.
+            </p>
+          </div>
+          <a href="/component/proceso.html" class="service-btn">AQUÍ</a>
+        </div>
+        <div class="service-item">
+          <div class="service-icono-section">
+            <img class="service-icono" src="img/pe.png" alt="Eléctrica" />
+            <div class="serivice-img-line"></div>
+          </div>
+          <div class="service-info">
+            <h3 class="service-sub-title">Planificación Eléctrica</h3>
+            <p class="service-text">
+              Construcción y proceso de diseño de tableros eléctricos.
+            </p>
+          </div>
+          <a href="/component/planificacion.html" class="service-btn">AQUÍ</a>
+        </div>
+        <div class="service-item">
+          <div class="service-icono-section">
+            <img class="service-icono" src="img/ae.png" alt="especialización" />
+          </div>
+          <div class="service-info">
+            <h3 class="service-sub-title">Asesoría de especialización</h3>
+            <p class="service-text">Cursos online (actualizados cada tiempo).</p>
+          </div>
+          <a href="/component/acesoria.html" class="service-btn">AQUÍ</a>
+        </div>
+        <div class="service-item">
+          <div class="service-icono-section">
+            <img class="service-icono" src="img/ai.png" alt="Nosotros" />
+          </div>
+          <div class="service-info">
+            <h3 class="service-sub-title">Automatización Industrial</h3>
+            <p class="service-text">
+              Automatización de procesos industriales y expedientes técnicos.
+            </p>
+          </div>
+          <a href="/component/automatizacion.html" class="service-btn">AQUÍ</a>
+        </div>
+      </div>
+    </section>
+    <section class="agent" id="calendar">
+      <h1 class="agent-title">
+        AGENDA 
+        <span class="highlight">TU DÍA Y </span>
+        TRANSFORMA
+        <span class="highlight">TU FUTURO</span>
+        ELÉCTRICO
+      </h1>
+      <div class="agent-content">
+        <form class="form-section">
+          <div class="form-group">
+            <label for="telefono" class="form">Teléfono</label>
+            <input type="text" id="telefono" class="form-tel" placeholder="Teléfono">
+          </div>
+          <div class="form-group">
+            <label for="cotizacion" class="form">Cotización</label>
+            <textarea class="form-control" id="cotizacion" placeholder="Cotización" rows="2">
+            </textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="ubicacion" class="form">Ubicación</label>
+            <div class="input-group">
+              <input type="text" name="map" id="map" class="form-map" placeholder="Ubicación">
+              <button type="button" class="map-aqui">AQUÍ</button>
+            </div>
+          </div>
+          
+          <button type="submit" class="form-submit">Solicitar llamada</button>
+        </form>
+        
+        <div class="card">
+          <div class="calendar-toolbar">
+            <button class="prev month-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="current-month"></div>
+            <button class="next month-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="calendar">
+            <div class="weekdays">
+              <div class="weekday-name">DO</div>
+              <div class="weekday-name">LU</div>
+              <div class="weekday-name">MA</div>
+              <div class="weekday-name">MI</div>
+              <div class="weekday-name">JU</div>
+              <div class="weekday-name">VI</div>
+              <div class="weekday-name">SA</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+          <div class="legend">
+            <div class="legend-item">
+              <button class="activity-color" id="activity-btn"></button> Actividad
+            </div> 
+            <div class="legend-item">
+              <button class="available-color" id="availability-btn"></button> Disponible
+            </div>
+            <button class="calendar-button" id="ok-btn">OK</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-info">
+        <h1 class="contact-title">CONTACTA CON NOSOTROS</h1>
+      </div>
+      <div class="contact-info-content">
+        <div class="contact-img">
+          <img src="../img/contac.png" alt="">
+        </div>
+        <form class="form-contact">
+          <div class="form-group">
+            <label for="name" class="form-nombre">Nombre</label>
+            <input type="text" name="name" id="name" class="form-name" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-correo">Correo eléctronico</label>
+            <input type="text" name="email" id="email" class="form-email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="asunto" class="form-asunto">Asunto</label>
+            <textarea class="form-texta" name="asunto" id="asunto" rows="5" colums="3"></textarea>
+          </div>
+          <button class="btn enviar">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-info">
+        <div class="footer-info-logo">
+          <img src="../img/logofooter.png" alt="">
+          <p class="footer-text">
+            Brindamos soluciones eléctricas a nivel
+            nacional, garantizando calidad, seguridad
+            y adaptabilidad en todo nuestros servicios
+            con más de 10 años de experiencia en el 
+            rubro.
+          </p>
+        </div>
+        <div class="footer-info-contact">
+          <strong class="footer-title">Contacto</strong>
+          <span class="footer-cel">
+            <i class="fas fa-phone-alt"></i>
+            943 931 584
+          </span>
+          <span class="footer-address">
+            <i class="fas fa-map-marker-alt"></i>
+            Urb. Las Praderas del Sol
+            Chiclayo - Mz. B Lt.12
+          </span>
+          <span class="footer-email">
+            <i class="fas fa-envelope"></i>
+            ssielmat.ing.elec@gmail.com
+          </span>
+          
+        </div>
+
+        <div class="footer-info-network">
+          <strong class="footer-title">Redes sociales</strong>
+          <span class="footer-icon-tiktok">
+            <i class="fab fa-tiktok"></i>
+          </span>
+          <span class="footer-icon-facebook">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span class="footer-icon-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </span>
+          
+        </div>
+      </div>
+    </section>
+    <footer class="footers-info">
+      <span class="footer-detail">
+        Todos los derechos reservados. Sielmat. Política de Privacidad. Diseñado por Leyci Sinti
+      </span>
+    </footer>
+  <script src="/js/calendar.js"></script>
+</body>
+</html>

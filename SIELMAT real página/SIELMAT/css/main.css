@@ -1,0 +1,67 @@
+:root{
+  --theme-color: white;
+  --primary-color: #FF6900;
+  --secundary-color: #0158FF;
+  --text-color-inverse: white;
+  --text-color: #0158FF;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #0158FF;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}*/

@@ -1,0 +1,264 @@
+.substation,
+.sistem,
+.plans,
+.armed{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--secundary-color);
+  color: var(--theme-color);
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.engines,
+.boards,
+.fat,
+.integral{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--theme-color);
+  color: var(--theme-color);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.sub-info,
+.sistem-info,
+.engines-info,
+.boards-info,
+.plans-info,
+.armed-info,
+.fat-info,
+.integral-info{
+  align-items: center;
+  justify-items: center;
+}
+
+.sub-thea,
+.sistem-thea,
+.engines-thea,
+.boards-thea,
+.plans-thea,
+.armed-thea,
+.fat-thea,
+.integral-thea{
+  background-color: var(--theme-color);
+  border-radius: 20px 60px;
+  height: 100px;
+  width: 103%;
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.engines-thea,
+.boards-thea,
+.fat-thea,
+.integral-thea{
+  border: 5px solid var(--primary-color);
+}
+
+.sub-title,
+.sistem-title,
+.engines-title,
+.boards-title,
+.plans-title,
+.armed-title,
+.fat-title,
+.integral-title{
+  color: var(--primary-color);
+  font-size: 25px;
+  text-align: center;
+  padding-block: 20px;
+  font-weight: bold;
+}
+
+.sub-detail,
+.sistem-detail,
+.engines-detail,
+.boards-detail,
+.plans-detail,
+.armed-detail,
+.fat-detail,
+.integral-detail{
+  background-color: var(--primary-color);
+  border-radius: 2px 2px 20px 20px;
+  width: 90%;
+  padding: 5px;
+  box-sizing: border-box;
+  top: 34px;
+  height: 15vh;
+}
+
+.sub-text,
+.sistem-text,
+.engines-text,
+.boards-text,
+.plans-text,
+.armed-text,
+.fat-text,
+.integral-text{ 
+  align-content: center;
+  padding: 20px;
+  padding-block: 30px;
+  text-align: center;
+}
+
+
+
+.sub-img-section,
+.sistem-img-section,
+.plans-img-section,
+.armed-img-section{
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.engines-img-section,
+.boards-img-section,
+.fat-img-section,
+.integral-img-section{
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.sub-img,
+.sistem-img,
+.engines-img,
+.boards-img,
+.plans-img,
+.armed-img,
+.fat-img,
+.integral-img{
+  max-width: 100%;
+  width: 560px;
+  height: 506px;
+  border-radius: 15px;
+}
+
+.service-btn {
+  background: linear-gradient(#fff,73%,#999999);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.service-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.tem-btn {
+  background: linear-gradient(#FF6900,63%,#993F00);
+  color: var(--theme-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.tem-btn:hover {
+  background-color: var(--hover-color);
+}
+
+
+
+/*Responsive*/
+@media (max-width: 950px) {
+  .substation,
+  .sistem,
+  .plans,
+  .armed{
+    display: block;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+  }
+
+  .sub-thea,
+  .sistem-thea,
+  .engines-thea,
+  .boards-thea,
+  .plans-thea,
+  .armed-thea,
+  .fat-thea,
+  .integral-thea {
+    height: 70px;
+    width: 100%;
+  }
+
+  .sub-title,
+  .sistem-title,
+  .engines-title,
+  .boards-title,
+  .plans-title,
+  .armed-title,
+  .fat-title,
+  .integral-title {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+
+  .sub-detail,
+  .sistem-detail,
+  .engines-detail,
+  .boards-detail,
+  .plans-detail,
+  .armed-detail,
+  .fat-detail,
+  .integral-detail {
+    width: 80%;
+    height: 50%;
+    padding: 5px;
+  }
+
+  .sub-img,
+  .sistem-img,
+  .engines-img,
+  .boards-img,
+  .plans-img,
+  .armed-img,
+  .fat-img,
+  .integral-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-btn{
+    transform: translate(0px, 975%);
+  }
+
+  .fat,
+  .integral,
+  .engines,
+  .boards{
+    flex-direction: column-reverse;
+  }
+
+  .engines-img-section,
+  .boards-img-section,
+  .fat-img-section,
+  .integral-img-section{
+    margin-top: 20px;
+  }
+
+  .tem-btn{
+    transform: translate(0px, 975%);
+  }
+}

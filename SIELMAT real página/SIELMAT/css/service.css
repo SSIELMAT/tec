@@ -1,0 +1,119 @@
+
+.services {
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+.service-title{
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Estilo de cada elemento de servicio */
+.service-item {
+  text-align: center;
+  padding: 15px;
+}
+
+.service-icono{
+  width: 7.8em;
+}
+
+.service-info {
+  margin: 20px 0;
+}
+
+
+.service-sub-title{
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.service-text{
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Botones de los servicios */
+.service-btn{
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-color-inverse);
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-btn:hover{
+  filter: brightness(130%);
+}
+
+/* Diseño responsivo */
+@media (max-width: 950px) {
+  .service-btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 950px) {
+  .services {
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+  }
+
+  .services-title{
+    font-size: 40px;
+  }
+
+  .service-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+
+  }
+
+  .serivice-img-line{
+    background-color: var(--secundary-color);
+    width: 90%;
+    height: 3px;
+    position:absolute;
+    bottom: 5px;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-rows: auto auto 0 auto;
+    justify-items: left;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .service-info {
+    text-align: left;
+    max-width: 80%;
+  }
+  
+  .service-sub-title{
+    font-size: 30px;
+  }
+
+
+  .service-text{
+    font-size: 20px;
+    max-width: 80%;
+  }
+  
+  .service-btn {
+    width: auto;
+    justify-self: end;
+    transform: translateY(-5.4em);
+  }
+}

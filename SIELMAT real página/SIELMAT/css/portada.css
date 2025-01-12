@@ -1,0 +1,71 @@
+.portada-img {
+  width: 100%;
+  /*height: auto;
+  display: block;*/
+}
+
+
+/*button*/
+
+.portada-btn{
+  position: absolute;
+  border: none;
+  display: inline-block;
+  transform: translate(120%, -35vh);
+  border-radius: 20px 10px 20px 10px;
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  font-size: 25px;
+  padding: 0.5em 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portada-btn:hover {
+  background-color: var(--secundary-color);
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Movil reponsive*/
+@media (max-width: 950px){
+  .portada{
+    text-align: center;
+  }
+
+  .portada-details{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .portada-text{
+    color: var(--secundary-color);
+    font-weight: medium;
+  }
+
+  .portada-img{
+    content: url('../img/portadacelular.png');
+    padding-top: 26px;
+  }
+
+  /*button*/
+  .portada-btn{
+    display: none;
+  }
+}
+
+
+
+/*escritorio*/
+@media (min-width: 950px){
+  .portada-details{
+    display: none;
+  }
+
+  .portada-contact-btn {
+    position: relative;
+    text-align: center;
+  }
+}
